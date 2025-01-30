@@ -20,6 +20,9 @@
     function displayNumber() {
       // Retrieve the number from localStorage
       const savedNumber = localStorage.getItem('savedNumber');
+
+    if (savedNumber !== null) {
+        document.getElementById('displayArea').innerText = `Saved Number: ${savedNumber}`;
     }
   </script> 
 
