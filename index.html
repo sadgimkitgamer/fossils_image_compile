@@ -5,11 +5,23 @@
 </head>
 <body>
   
-<h1>how many images per section?</h1> <br>
+  <h1>how many images per section?</h1> <br>
 
-<input type="number" id="nps" name="nps"/>
+  <input type="number" id="nps" name="nps"/>
 
-  
+  <script>
+    function saveNumber() {
+      const number = document.getElementById('numberInput').value;
+
+      localStorage.setItem('savedNumber', number);
+      alert('Number saved!');
+    }
+
+    function displayNumber() {
+      // Retrieve the number from localStorage
+      const savedNumber = localStorage.getItem('savedNumber');
+    }
+  </script> 
 
 </body>
 </html>
