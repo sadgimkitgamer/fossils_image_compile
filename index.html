@@ -8,10 +8,11 @@
   <h1>how many images per section?</h1> <br>
 
   <input type="number" id="nps" name="nps"/>
-
+  <button onclick="saveNumber()">Save</button>
+  <button onclick="displayNumber()">Display</button>
   <script>
     function saveNumber() {
-      const number = document.getElementById('numberInput').value;
+      const number = document.getElementById('nps').value;
 
       localStorage.setItem('savedNumber', number);
       alert('Number saved!');
